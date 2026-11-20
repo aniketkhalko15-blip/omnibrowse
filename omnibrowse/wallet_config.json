@@ -1,0 +1,13 @@
+{
+  "creator": "Aniket (@aniket_aegistraton)",
+  "github": "aniketkhalko15-blip",
+  "email": "aniketkhalko15@gmail.com",
+  "youtube": "@Yamiyugen-z3x",
+  "crypto_payout_address": "0xB9C7335a345130658453F30Aad5d811c9e359500",
+  "supported_networks": [
+    "Polygon (MATIC / USDT / USDC)",
+    "Arbitrum (ETH / USDT / USDC)",
+    "BNB Smart Chain (BNB / USDT)",
+    "Ethereum Mainnet (ETH / USDT / USDC)"
+  ]
+}
