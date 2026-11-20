@@ -21,3 +21,7 @@ BANNER = r"""
 def print_banner():
     """Display startup banner with creator and crypto tip-jar links."""
     print(BANNER)
+
+def check_social_verification():
+    """Verification placeholder."""
+    pass
