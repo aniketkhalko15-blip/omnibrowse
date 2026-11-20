@@ -17,8 +17,6 @@
 - 📸 **Instagram:** [@aniket_aegistraton](https://instagram.com/aniket_aegistraton)
 - 🐙 **GitHub:** [@aniketkhalko15-blip](https://github.com/aniketkhalko15-blip)
 - ▶️ **YouTube:** [@Yamiyugen-z3x](https://youtube.com/@Yamiyugen-z3x)
-- 🪙 **Crypto / Payout Address (USDT / USDC / ETH / Polygon):**  
-  `0xB9C7335a345130658453F30Aad5d811c9e359500`
 
 ---
 
@@ -28,9 +26,7 @@
 
 - 🧠 **Token Efficient:** Converts DOM into numbered element trees (`[1] <input> Search`, `[2] <button> Submit`), slashing context token costs by 80%.
 - 🎯 **Universal LLM Support:** Compatible with Claude, OpenAI, DeepSeek, Gemini, and local models (Ollama / vLLM).
-- 🛡️ **Autonomous Bug & Security Recon:** Scans web applications for exposed secrets, API keys, and misconfigured endpoints.
-- 💰 **Web3 Bounty Scout:** Scrapes Web3 platforms for active developer bounties paid in USDC/USDT.
-- 🎬 **Autonomous Media Engine:** Detects peak live chat hype, clips viral moments, and publishes to YouTube Shorts automatically.
+- ⚡ **Autonomous Workflows:** Deterministic web interactions, multi-step agent actions, session persistence, and structured DOM parsing.
 
 ---
 
@@ -43,14 +39,21 @@ pip install -e .
 playwright install chromium
 ```
 
-### Run Bug Bounty Recon
-```bash
-python omnibrowse/bounty_hunter.py
-```
+### Basic Usage
 
-### Run Web3 Crypto Bounty Scout
-```bash
-python omnibrowse/web3_bounty.py
+```python
+import asyncio
+from omnibrowse import OmniBrowser
+
+async def main():
+    browser = OmniBrowser(headless=True)
+    await browser.start()
+    await browser.goto("https://news.ycombinator.com")
+    print("Page title:", await browser.page.title())
+    await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
 
 ---

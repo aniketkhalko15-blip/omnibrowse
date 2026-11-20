@@ -12,3 +12,17 @@ build/
 omni_screenshot.png
 omni_step_*.png
 .DS_Store
+
+# Private / Internal Earning Engines & Reports
+omnibrowse/bounty_hunter.py
+omnibrowse/web3_bounty.py
+examples/run_bounty_hunter.py
+examples/get_bounty_details.py
+examples/get_bounty_urls.py
+examples/inspect_raenest.py
+bug_bounty_report.json
+web3_bounties.json
+wallet_config.json
+*.png
+*.mp4
+*.part
