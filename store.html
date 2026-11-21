@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniBrowse Data & Software Store</title>
+    <style>
+        :root {
+            --bg: #090d16;
+            --card-bg: #131b2e;
+            --border: #232f48;
+            --accent: #6366f1;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+            --cyan: #38bdf8;
+            --green: #22c55e;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 40px 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        header { text-align: center; max-width: 600px; margin-bottom: 40px; }
+        h1 { font-size: 32px; font-weight: 800; background: linear-gradient(135deg, #fff 0%, var(--cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+        p { color: var(--text-dim); font-size: 15px; line-height: 1.6; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; max-width: 1000px; width: 100%; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, border-color 0.2s; }
+        .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+        .tag { background: #1e1b4b; color: #a5b4fc; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; width: fit-content; margin-bottom: 16px; }
+        .card h2 { font-size: 20px; margin-bottom: 10px; }
+        .price { font-size: 28px; font-weight: 800; color: var(--green); margin: 16px 0; }
+        .features { list-style: none; margin-bottom: 24px; }
+        .features li { color: var(--text-dim); font-size: 13px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .features li::before { content: "✓"; color: var(--cyan); font-weight: bold; }
+        .pay-box { background: #0b0f19; border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+        .pay-label { font-size: 11px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+        .wallet-addr { font-family: monospace; font-size: 12px; color: var(--cyan); word-break: break-all; }
+        .copy-hint { font-size: 11px; color: var(--text-dim); margin-top: 6px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OmniBrowse Data & Software Store</h1>
+        <p>Instant digital download assets and software licenses. Direct settlement in USDC / ETH with zero intermediary fees.</p>
+    </header>
+
+    <div class="grid">
+        <!-- Product 1 -->
+        <div class="card">
+            <div>
+                <span class="tag">B2B Lead Dataset</span>
+                <h2>500 Dallas Roofing Contractors</h2>
+                <p>Verified commercial and residential roofing companies across DFW with owner names, direct phone lines, and verified email addresses.</p>
+                <div class="price">$35 USDC</div>
+                <ul class="features">
+                    <li>500 verified rows (CSV / Excel)</li>
+                    <li>Owner & Decision Maker contacts</li>
+                    <li>Instant delivery post-confirmation</li>
+                </ul>
+            </div>
+            <div class="pay-box">
+                <div class="pay-label">Send $35 USDC (ERC-20 / Base) to:</div>
+                <div class="wallet-addr">0xB9C7335a345130658453F30Aad5d811c9e359500</div>
+                <div class="copy-hint">Delivery to your sender address or email aniketkhalko15@gmail.com</div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <div>
+                <span class="tag">B2B Lead Dataset</span>
+                <h2>500 Miami MedSpas & Aesthetic Clinics</h2>
+                <p>High-ticket medical spas, cosmetic clinics, and plastic surgery centers across South Florida with verified manager/founder contacts.</p>
+                <div class="price">$35 USDC</div>
+                <ul class="features">
+                    <li>500 verified clinics (Miami & Ft Lauderdale)</li>
+                    <li>Clinic Director & Office Manager emails</li>
+                    <li>Clean, CRM-ready spreadsheet</li>
+                </ul>
+            </div>
+            <div class="pay-box">
+                <div class="pay-label">Send $35 USDC (ERC-20 / Base) to:</div>
+                <div class="wallet-addr">0xB9C7335a345130658453F30Aad5d811c9e359500</div>
+                <div class="copy-hint">Delivery to your sender address or email aniketkhalko15@gmail.com</div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <div>
+                <span class="tag">Developer License</span>
+                <h2>OmniBrowse Pro Developer License</h2>
+                <p>Full autonomous browser engine code with persistent session context, stealth anti-bot evasion, and visual DOM indexing for LLM agents.</p>
+                <div class="price">$149 USDC</div>
+                <ul class="features">
+                    <li>Complete Python source code & SDK</li>
+                    <li>Lifetime commercial usage rights</li>
+                    <li>Multi-agent browser orchestration</li>
+                </ul>
+            </div>
+            <div class="pay-box">
+                <div class="pay-label">Send $149 USDC (ERC-20 / Base) to:</div>
+                <div class="wallet-addr">0xB9C7335a345130658453F30Aad5d811c9e359500</div>
+                <div class="copy-hint">Delivery to your sender address or email aniketkhalko15@gmail.com</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
