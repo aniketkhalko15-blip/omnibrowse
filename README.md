@@ -1,62 +1,48 @@
-# 🌐 OmniBrowse
+# ⚡ OmniBrowse: Universal Autonomous Browser Engine for AI Agents
 
-<p align="center">
-  <b>The Universal Autonomous Browser Engine for AI Agents (ChatGPT, Claude, DeepSeek, Gemini & Local LLMs)</b>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Web3 Store](https://img.shields.io/badge/Web3_Store-Live-6366f1.svg)](https://aniketkhalko15-blip.github.io/omnibrowse/store.html)
+[![Settlement](https://img.shields.io/badge/Settlement-USDC%20%7C%20ETH-22c55e.svg)](#instant-crypto-store)
 
-<p align="center">
-  <a href="https://github.com/aniketkhalko15-blip/omnibrowse/stargazers"><img src="https://img.shields.io/github/stars/aniketkhalko15-blip/omnibrowse?style=for-the-badge&logo=github&color=black" alt="GitHub stars"></a>
-  <a href="https://instagram.com/aniket_aegistraton"><img src="https://img.shields.io/badge/Instagram-Follow%20@aniket__aegistraton-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-  <a href="https://youtube.com/@Yamiyugen-z3x"><img src="https://img.shields.io/badge/YouTube-Subscribe%20Yami%20Yugen-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License: MIT"></a>
-</p>
+> **OmniBrowse** is an open-source, production-grade autonomous browser engine engineered specifically for AI Agents, autonomous scrapers, and LLM-driven workflows. Built with persistent session profiles, stealth anti-bot protection, and token-efficient visual DOM indexing.
 
 ---
 
-## 👨‍💻 Created by Aniket
-- 📸 **Instagram:** [@aniket_aegistraton](https://instagram.com/aniket_aegistraton)
-- 🐙 **GitHub:** [@aniketkhalko15-blip](https://github.com/aniketkhalko15-blip)
-- ▶️ **YouTube:** [@Yamiyugen-z3x](https://youtube.com/@Yamiyugen-z3x)
+## 🛒 Instant Web3 Data & Software Store (Direct Settlement)
+
+We pre-compile verified commercial B2B datasets and commercial developer licenses directly on-chain. Zero middleman fees.
+
+| Product / Dataset | Scope & Quality | Price | Settlement Wallet |
+|---|---|---|---|
+| **500 Dallas Roofing Contractors** | Owner names, direct cell lines, verified emails | **$35 USDC** | `0xB9C7335a345130658453F30Aad5d811c9e359500` |
+| **500 Miami MedSpas & Aesthetic Clinics** | Decision maker & clinic manager direct contacts | **$35 USDC** | `0xB9C7335a345130658453F30Aad5d811c9e359500` |
+| **1,000 Shopify US Apparel Brand Founders** | Founder names, direct emails, verified revenue bracket | **$45 USDC** | `0xB9C7335a345130658453F30Aad5d811c9e359500` |
+| **OmniBrowse Pro Developer Lifetime License** | Full autonomous browser source code & commercial rights | **$149 USDC** | `0xB9C7335a345130658453F30Aad5d811c9e359500` |
+
+👉 **Live Web Storefront:** [https://aniketkhalko15-blip.github.io/omnibrowse/store.html](https://aniketkhalko15-blip.github.io/omnibrowse/store.html)  
+*Delivery: Send transaction hash + requested package to `aniketkhalko15@gmail.com` or your sending address for instant file dispatch.*
 
 ---
 
-## ⚡ What is OmniBrowse?
+## 🚀 Key Architectural Superpowers
 
-**OmniBrowse** is a high-speed, lightweight browser engine built from the ground up for LLMs. Instead of drowning AI models in 50,000 lines of messy HTML, OmniBrowse extracts a **clean, indexed representation** of the page and equips your agents with deterministic tools to navigate, search, click, and extract data.
-
-- 🧠 **Token Efficient:** Converts DOM into numbered element trees (`[1] <input> Search`, `[2] <button> Submit`), slashing context token costs by 80%.
-- 🎯 **Universal LLM Support:** Compatible with Claude, OpenAI, DeepSeek, Gemini, and local models (Ollama / vLLM).
-- ⚡ **Autonomous Workflows:** Deterministic web interactions, multi-step agent actions, session persistence, and structured DOM parsing.
+1. **Persistent Session Context:** Saves authenticated states, cookies, and localStorage across agent runs (no repeated 2FA/login friction).
+2. **Stealth Anti-Detection:** Bypasses `navigator.webdriver` flags and standard headless bot fingerprints.
+3. **LLM-Optimized DOM Indexer:** Strips bloated HTML into token-efficient, numbered interactive elements for vision and language models.
 
 ---
 
-## 🚀 Quickstart
+## 💻 Quickstart
 
 ```bash
 git clone https://github.com/aniketkhalko15-blip/omnibrowse.git
 cd omnibrowse
-pip install -e .
+pip install -r requirements.txt
 playwright install chromium
-```
-
-### Basic Usage
-
-```python
-import asyncio
-from omnibrowse import OmniBrowser
-
-async def main():
-    browser = OmniBrowser(headless=True)
-    await browser.start()
-    await browser.goto("https://news.ycombinator.com")
-    print("Page title:", await browser.page.title())
-    await browser.close()
-
-if __name__ == "__main__":
-    asyncio.run(main())
+python examples/quickstart.py
 ```
 
 ---
 
 ## 📄 License
-MIT License. Free to use and build upon.
+MIT © Aniket Khalko
